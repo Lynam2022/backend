@@ -1,0 +1,18 @@
+# Sensitive files
+tokens.json
+*.json
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo 
