@@ -296,6 +296,8 @@ EOL
 pm2 status
 
 # Xem logs
+pm2 logs y2tubex --lines 50
+
 pm2 logs y2tubex-backend
 
 # Kiểm tra port
@@ -305,6 +307,9 @@ sudo netstat -tulpn | grep 3000
 ### 3.2. Các lệnh bảo trì
 ```bash
 # Khởi động lại ứng dụng
+pm2 restart y2tubex
+pm2 status
+
 pm2 restart y2tubex-backend
 
 # Dừng ứng dụng
