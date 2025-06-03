@@ -77,25 +77,7 @@ CORS_ORIGIN=https://y2tubex.com
 EOL
 
 # Tạo các thư mục cần thiết
-mkdir -p downloads temp logs
-
-# Cấp quyền cho thư mục
-sudo chown -R $USER:$USER /var/www/y2tubex
-chmod -R 755 /var/www/y2tubex
-```
-
-### 2.3. Cấu hình PM2
-```bash
-# Tạo file ecosystem.config.js
-cat > ecosystem.config.js << 'EOL'
-module.exports = {
-  apps: [{
-    name: 'y2tubex-backend',
-    script: 'server.js',
-    instances: 1,
-    autorestart: true,
-    watch: false,
-    max_memory_restart: '1G',
+mkdir -p down2G',
     env: {
       NODE_ENV: 'production'
     }
